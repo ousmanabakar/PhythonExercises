@@ -1,0 +1,17 @@
+def color_translator(hex_color):
+	if hex_color == "red":
+		return  "#ff0000"
+	elif hex_color == "green":
+		return "#00ff00"
+	elif hex_color == "blue":
+		return "#0000ff"
+	else:
+		return "unknown"
+	return "unknown"
+
+print(color_translator("blue")) # Should be #0000ff
+print(color_translator("yellow")) # Should be unknown
+print(color_translator("red")) # Should be #ff0000
+print(color_translator("black")) # Should be unknown
+print(color_translator("green")) # Should be #00ff00
+print(color_translator("")) # Should be unknown
