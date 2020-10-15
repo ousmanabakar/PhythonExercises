@@ -1,0 +1,16 @@
+n = int(input("Number of student:"))
+student_marks = {}
+for i in range(n):
+    line = input().split()
+    name = line[0]
+    scores = line[1:]
+    
+    scores = map(float, scores)
+
+    student_marks[name] = scores
+
+query_name = input("Enter query name:")
+
+query_scores = student_marks[query_name]
+
+print("{0:.2f}".format(sum(query_scores) / 3))
